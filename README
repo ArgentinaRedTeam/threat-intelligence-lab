@@ -1,10 +1,10 @@
-# 🛡️ Threat Intelligence Tools 🛡️
+🛡️ Threat Intelligence Tools 🛡️
 ¡Explora y Potencia tus Capacidades de Threat Intelligence! 🔍
 
-# Introducción
-Este proyecto proporciona un conjunto de herramientas y scripts para ayudarte a explorar, analizar y mejorar tus capacidades en Threat Intelligence. Aquí, podrás encontrar configuraciones y guías sobre cómo desplegar y utilizar herramientas clave de Threat Intelligence en contenedores Docker. 🛠️
+Introducción
+Este proyecto tiene el objetivo de analizar y probar diferentes herramientas para la caza de amenazas en seguridad informatica.
 
-## Estructura del Proyecto 📁
+Estructura del Proyecto 📁
 
 threat-intelligence-tools/
 │
@@ -28,26 +28,27 @@ threat-intelligence-tools/
 │
 └── README.md                    # ¡Este archivo! 📖
 
-## Documentación Principal 📄
-Para una guía detallada, análisis de ventajas y desventajas, y cómo utilizar cada una de estas herramientas, por favor consulta la documentación principal. Esta documentación es esencial para todos los miembros del equipo y proporciona una visión completa de las capacidades de Threat Intelligence disponibles.
+Documentación del analisis 📄
+https://drive.google.com/file/d/1EfXvoSfFl04CvrG0EFPurcDW4Db52Uzf/view?usp=drive_link
 
-## ¿Qué Hace Cada Herramienta? 🌟
-### CrowdSec 🛡️
+¿Qué Hace Cada Herramienta? 🌟
+
+CrowdSec 🛡️
 Una herramienta colaborativa que permite detectar y mitigar amenazas a través del análisis de logs. Es ideal para entornos que requieren detección en tiempo real y escalabilidad.
 
-### Certstream 🔒
+Certstream 🔒
 Monitorea en tiempo real la emisión de certificados SSL/TLS, permitiendo la detección proactiva de posibles ataques de phishing y anomalías.
 
-### ThreatFox 🦊
+ThreatFox 🦊
 Accede a indicadores de compromiso (IOCs) compartidos por la comunidad, ofreciendo una manera rápida y gratuita de mantenerse al día con las últimas amenazas cibernéticas.
 
-### Awesome-Threat-Intelligence 📚
+Awesome-Threat-Intelligence 📚
 Un repositorio curado que recopila una amplia gama de recursos de Threat Intelligence, facilitando la investigación y el desarrollo continuo en ciberseguridad.
 
-### ¡Empecemos! 🚀
-Para empezar a usar estas herramientas, sigue las instrucciones en la documentación principal y consulta los archivos de configuración proporcionados en cada directorio. ¡Potencia tu capacidad de detectar y responder a amenazas cibernéticas con estas herramientas!
+¡Empecemos! 🚀
+Para empezar a usar estas herramientas simplemente clona este repositorio.
 
-### Notas Importantes 💡
+Notas Importantes 💡
 Asegúrate de tener Docker correctamente instalado y configurado. 🐋
 Personaliza los archivos de configuración según las necesidades específicas de tu entorno.
-Revisa la documentación principal para entender mejor cómo utilizar cada herramienta.
+Revisa la documentación del analisis para entender mejor cómo utilizar cada herramienta.
