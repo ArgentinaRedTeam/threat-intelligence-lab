@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  crowdsec:
+    image: crowdsecurity/crowdsec:latest
+    container_name: crowdsec
+    volumes:
+      - ./config:/etc/crowdsec
+      - ./data:/var/lib/crowdsec/data
+      - ./logs:/var/log/crowdsec
+    environment:
+      - CONFIG_PATH=/etc/crowdsec
+      - DATA_PATH=/var/lib/crowdsec/data
+    ports:
+      - "8081:8080"
+    networks:
+      - crowdsec-network
+    restart: unless-stopped
+
+  # Si decides usar una base de datos diferente, por ejemplo, PostgreSQL:
+  database:
+    image: postgres:latest
+    container_name: crowdsec-db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: crowdsec_db
+    volumes:
+      - ./db:/var/lib/postgresql/data
+    networks:
+      - crowdsec-network
+    restart: unless-stopped
+
+networks:
+  crowdsec-network:
+    driver: bridge
